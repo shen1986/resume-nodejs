@@ -61,7 +61,7 @@ $(function () {
             var expContent = $('.experience .experience-content');
             var that = this;
             expContent.fadeOut(200,function(){
-                expContent.html(template('experienceContent',resumeData.experience.experienceList[$(that).index()]));
+                $('.experienceList').eq($(that).index()).show().siblings().hide();
             }).fadeIn(200);
             $(this).addClass('selected').siblings().removeClass('selected');
         });

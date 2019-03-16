@@ -142,15 +142,19 @@
                                 <div class="img" style="background-image: url(<%= experience.experienceList[0].contentLeft %>)"></div>
                             </div>
                             <div class="right">
-                                <h4><%= experience.experienceList[0].contentRight.title %></h4>
-                                <p class="time"><%= experience.experienceList[0].contentRight.time %></p>
-                                <p class="post">&lt;<span><%= experience.experienceList[0].contentRight.post %></span>&gt;</p>
-                                <p class="tech">"<span><%= experience.experienceList[0].contentRight.tech %></span>"</p>
-                                <ul class="list">
-                                    <% for( var i = 0 ; i < experience.experienceList[0].contentRight.list.length; i++ ){ %>
-                                    <li class="item"><%= experience.experienceList[0].contentRight.list[i] %></li>
-                                    <% } %>
-                                </ul>
+                                <% for(var i = 0; i < experience.experienceList.length; i++) { %>
+                                <div class="experienceList" style="display: <%= i==0? 'block' : 'none' %>;" >
+                                    <h4><%= experience.experienceList[i].contentRight.title %></h4>
+                                    <p class="time"><%= experience.experienceList[i].contentRight.time %></p>
+                                    <p class="post">&lt;<span><%= experience.experienceList[i].contentRight.post %></span>&gt;</p>
+                                    <p class="tech">"<span><%= experience.experienceList[i].contentRight.tech %></span>"</p>
+                                    <ul class="list">
+                                        <% for( var j = 0 ; j < experience.experienceList[i].contentRight.list.length; j++ ){ %>
+                                        <li class="item"><%= experience.experienceList[i].contentRight.list[j] %></li>
+                                        <% } %>
+                                    </ul>
+                                </div>
+                                <% } %>
                             </div>
                         </div>
                     </div>
@@ -221,7 +225,6 @@
     </div>
     <div class="arrow" style="display: block;"></div>
 
-    <!-- #################下面是模版引擎################### -->
     <!-- js插件导入 -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.fullpage.js"></script>
