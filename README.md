@@ -11,9 +11,14 @@
 
 - 个人介绍的模版,只要修改`staticData/resumeData.json`里面的数据就可以让这份介绍变成你自己的介绍
 - 由于使用的是服务端渲染，所以可以设置自己的SEO，以便于被搜索引擎搜索。而且网页展示的结构更清晰
+- 必须安装node环境，
+    + [Windows 安装](https://jingyan.baidu.com/article/48b37f8dd141b41a646488bc.html)
+    + [MacOS 安装](https://www.cnblogs.com/milo-xie/p/6581188.html)
+    + [Linux 安装](https://www.cnblogs.com/liuqi/p/6483317.html)
 - 进入文件进行如下操作
     + `npm install`
     + `npm start`
+- 打开网页输入`http://127.0.0.1:3000`就能看到个人介绍的网站
 
 ## 如何部署 //TODO
 
