@@ -15,10 +15,10 @@
     },
     "info": {
         "infoList": [
-            {"key": "年龄", "value": "33岁"},
-            {"key": "学历", "value": "本科"},
-            {"key": "坐标", "value": "上海"},
-            {"key": "状态", "value": "在职"}
+            {"key": "年龄", "value": "33岁", "img": "images/i_age.svg"},
+            {"key": "学历", "value": "本科", "img": "images/i_edu.svg"},
+            {"key": "坐标", "value": "上海", "img": "images/i_site.svg"},
+            {"key": "状态", "value": "在职", "img": "images/i_status.svg"}
         ],
         "infoDes": [
             "三年互联网经验,两年半全职前端开发经验",

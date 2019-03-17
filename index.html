@@ -24,7 +24,7 @@
             <div class="header-c">
                 <div class="logo">
                     <h1>
-                        <a href="https://github.com/shen1986" class="logo-c">小沈个人介绍</a>
+                        <a href="<%= work.workMoreGit %>" class="logo-c">小沈个人介绍</a>
                     </h1>
                 </div>
                 <div class="header-title">首页</div>
@@ -88,7 +88,7 @@
                             <li class="info-item">
                                 <div class="cont">
                                     <div class="img">
-                                        <img alt="" src="images/i_age.svg">
+                                        <img alt="" src="<%= info.infoList[i].img %>">
                                     </div>
                                     <div class="intro">
                                         <span><%= info.infoList[i].key %></span>/<span><%= info.infoList[i].value %></span>
@@ -161,7 +161,7 @@
                     <div class="shout-cut">
                         <ul class="cut-list" switch-exp="">
                             <% for( var i = 0 ; i < experience.experienceList.length ; i++ ){ %>
-                                <li class="item <%=i==0?'selected':''%>" data-index="<%= i %>"></li>
+                            <li class="item <%=i==0?'selected':''%>" data-index="<%= i %>"></li>
                             <% } %>
                         </ul>
                     </div>
@@ -220,7 +220,7 @@
 
     <div class="footer">
         <% for( var i = 0 ; i < footer.footerList.length; i++ ){ %>
-            <p><%= footer.footerList[i] %></p>
+        <p><%= footer.footerList[i] %></p>
         <% } %>
     </div>
     <div class="arrow" style="display: block;"></div>
