@@ -17,7 +17,7 @@
     + [Linux 安装](https://www.cnblogs.com/liuqi/p/6483317.html)
 - 进入文件进行如下操作
     + `npm install`
-    + `npm server.js`
+    + `node server.js`
 - 打开网页输入`http://127.0.0.1:3000`就能看到个人介绍的网站
 
 ## 如何部署 //TODO
