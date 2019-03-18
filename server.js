@@ -4,7 +4,7 @@
  * @Date: 2019-03-15 19:59:22
  */
 var http = require('http')
-var app = require('./app');
+var app = require('./server/app');
 
 /**
  * Get port from environment and store in Express.
