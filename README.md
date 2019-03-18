@@ -25,7 +25,7 @@
 - docker 社区版安装 注意，docker虽然有中文网站，但是里面的安装内容比较老，安装的时候最好看源网站
     + 我用的是CentOS系统 [社区版安装方法](https://docs.docker.com/install/linux/docker-ce/centos/)
 - 部署方法
-    + 进入Docker目录
+    + 进入Docker目录，在里面创建nodeapp文件夹，把代码复制进去
     + `docker build -t shenxf/nodejs`
     + `docker run -it -p 3001:3000 --name nodejs shenxf/nodejs /bin/bash`
     + `nodejs server.js`
