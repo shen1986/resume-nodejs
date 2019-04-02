@@ -18,14 +18,14 @@ app.get('/favicon.ico', function(req, res, next) {
 
 app.get('/', function(req, res, next) {
     // 自我介绍数据取得
-    fs.readFile('staticData/resumeData.json',(err, data) => {
+    fs.readFile(path.join(__dirname, '../staticData/resumeData.json'), (err, data) => {
         if (err) {
             console.log(err)
             return res.end('读取文件失败')
         }
         resumeJson = JSON.parse(data.toString())
 
-        ejs.renderFile('index.html',resumeJson,(err,str) => {
+        ejs.renderFile(path.join(__dirname, '../index.html'), resumeJson, (err, str) => {
             if (err) {
                 console.log(err)
                 return res.end('模版引擎渲染失败')
